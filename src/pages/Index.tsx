@@ -9,13 +9,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-background to-secondary">
       <div className="w-full max-w-6xl mx-auto text-center space-y-12">
         <div className="space-y-6 fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
             Miles
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Meaningful interactions and long-term engagement solutions
           </p>
         </div>
@@ -30,10 +30,10 @@ const Index = () => {
           </div>
           
           <div className="space-y-3 max-w-2xl mx-auto">
-            <p className="text-gray-600">
+            <p className="text-muted-foreground">
               Transform your browser into a powerful engagement platform
             </p>
-            <p className="text-gray-600">
+            <p className="text-muted-foreground">
               Track, analyze, and optimize your digital interactions effortlessly
             </p>
           </div>
