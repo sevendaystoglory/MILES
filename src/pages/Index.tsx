@@ -31,10 +31,7 @@ const Index = () => {
           
           <div className="space-y-3 max-w-2xl mx-auto">
             <p className="text-muted-foreground">
-              Transform your browser into a powerful engagement platform
-            </p>
-            <p className="text-muted-foreground">
-              Track, analyze, and optimize your digital interactions effortlessly
+              We understand it's not always easy to reply to a debate, spark a conversation, or persuade someone about a long-term goal. That's where Miles comes in to help.
             </p>
           </div>
         </div>
