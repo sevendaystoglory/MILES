@@ -13,10 +13,10 @@ const Index = () => {
       <div className="w-full max-w-6xl mx-auto text-center space-y-12">
         <div className="space-y-6 fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Miles
+            What will you say next?
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Meaningful interactions and long-term engagement solutions
+            Discover New ways to reply with MILES
           </p>
         </div>
 
