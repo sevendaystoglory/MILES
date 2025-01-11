@@ -1,11 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import VideoPlayer from '../components/VideoPlayer';
+import DownloadButton from '../components/DownloadButton';
 
 const Index = () => {
+  const handleDownload = () => {
+    // Replace with actual extension download URL
+    window.open('https://chrome.google.com/webstore/category/extensions', '_blank');
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-gray-50">
+      <div className="w-full max-w-6xl mx-auto text-center space-y-12">
+        <div className="space-y-6 fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+            Miles
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            Meaningful interactions and long-term engagement solutions
+          </p>
+        </div>
+
+        <div className="fade-in" style={{ animationDelay: '0.2s' }}>
+          <VideoPlayer videoUrl="https://your-video-url.mp4" />
+        </div>
+
+        <div className="space-y-8 fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col items-center gap-6">
+            <DownloadButton onClick={handleDownload} />
+          </div>
+          
+          <div className="space-y-3 max-w-2xl mx-auto">
+            <p className="text-gray-600">
+              Transform your browser into a powerful engagement platform
+            </p>
+            <p className="text-gray-600">
+              Track, analyze, and optimize your digital interactions effortlessly
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
