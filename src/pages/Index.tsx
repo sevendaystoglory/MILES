@@ -1,11 +1,18 @@
 import React from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 import DownloadButton from '../components/DownloadButton';
+import { Button } from '../components/ui/button';
+import { Github } from 'lucide-react';
 
 const Index = () => {
   const handleDownload = () => {
     // Replace with actual extension download URL
     window.open('https://chrome.google.com/webstore/category/extensions', '_blank');
+  };
+
+  const handleGithubSupport = () => {
+    // Replace with actual GitHub repository URL
+    window.open('https://github.com/yourusername/miles', '_blank');
   };
 
   return (
@@ -25,8 +32,16 @@ const Index = () => {
         </div>
 
         <div className="space-y-8 fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <DownloadButton onClick={handleDownload} />
+            <Button 
+              variant="outline" 
+              onClick={handleGithubSupport}
+              className="hover-scale"
+            >
+              <Github className="mr-2" />
+              Support on GitHub
+            </Button>
           </div>
           
           <div className="space-y-3 max-w-2xl mx-auto">
